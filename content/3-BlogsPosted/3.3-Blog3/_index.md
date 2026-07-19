@@ -31,7 +31,7 @@ This is important because a system may work correctly from the user’s perspect
 
 The following image represents the idea of using architectural guidance to review and improve cloud workloads.
 
-{{< figure src="/images/blog/blog3.jpg" title="AWS Well-Architected Framework Guidance" width="650px" >}}
+{{< figure src="/NguyenThiThuyHien_Workshop/images/blog/blog3.jpg" title="AWS Well-Architected Framework Guidance" width="650px" >}}
 
 The Well-Architected Framework helps cloud teams review workloads regularly instead of only checking the architecture once at the beginning. This approach supports continuous improvement throughout the system lifecycle.
 

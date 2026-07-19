@@ -40,7 +40,7 @@ With this approach, development and testing teams can still use realistic data f
 
 The following diagram illustrates the high-level workflow of data masking for Amazon RDS for Oracle.
 
-{{< figure src="/images/blog/blog2.jpg" title="Data Masking Workflow in Amazon RDS for Oracle" width="650px" >}}
+{{< figure src="/NguyenThiThuyHien_Workshop/images/blog/blog2.jpg" title="Data Masking Workflow in Amazon RDS for Oracle" width="650px" >}}
 
 When reviewing this workflow, I understood the process as follows.
 

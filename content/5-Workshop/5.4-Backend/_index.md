@@ -20,4 +20,4 @@ The Lambda functions are deployed inside the **Private App Subnet** and privatel
 
 Lambda logs and operational metrics are sent to Amazon CloudWatch for monitoring and alerting.
 
-![PharmaCare AI Overall Architecture](/images/5-Workshop/5.1-Workshop-overview/dia2.png)
+![PharmaCare AI Overall Architecture](/NguyenThiThuyHien_Workshop/images/5-Workshop/5.1-Workshop-overview/dia2.png)

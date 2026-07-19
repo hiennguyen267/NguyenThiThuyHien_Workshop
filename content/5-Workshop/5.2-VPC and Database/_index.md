@@ -28,4 +28,4 @@ These resources are deployed inside private subnets within `VPC-Cloud 10.0.0.0/1
 
 #### Core infrastructure architecture
 
-![Core VPC and Database Architecture](/images/5-Workshop/5.2-vpc-data/dia1.png)
+![Core VPC and Database Architecture](/NguyenThiThuyHien_Workshop/images/5-Workshop/5.2-vpc-data/dia1.png)

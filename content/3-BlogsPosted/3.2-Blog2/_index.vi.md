@@ -40,7 +40,7 @@ Với cách làm này, đội ngũ phát triển và kiểm thử vẫn có dữ
 
 Sơ đồ bên dưới minh họa quy trình tổng quan của Data Masking cho Amazon RDS for Oracle.
 
-{{< figure src="/images/blog/blog2.jpg" title="Data Masking Workflow in Amazon RDS for Oracle" width="650px" >}}
+{{< figure src="/NguyenThiThuyHien_Workshop/images/blog/blog2.jpg" title="Data Masking Workflow in Amazon RDS for Oracle" width="650px" >}}
 
 Khi xem quy trình này, em hiểu các bước hoạt động chính như sau.
 

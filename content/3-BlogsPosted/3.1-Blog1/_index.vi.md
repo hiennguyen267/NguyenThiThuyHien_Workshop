@@ -37,7 +37,7 @@ Nói cách khác, quyền hiệu lực cuối cùng được tính là phần gi
 
 Sơ đồ bên dưới minh họa luồng xác thực và phân quyền của Amazon EKS Pod Identity.
 
-{{< figure src="/images/blog/blog1.jpg" title="Amazon EKS Pod Identity Architecture" width="650px" >}}
+{{< figure src="/NguyenThiThuyHien_Workshop/images/blog/blog1.jpg" title="Amazon EKS Pod Identity Architecture" width="650px" >}}
 
 Kiến trúc này có thể được chia thành ba lớp chính.
 

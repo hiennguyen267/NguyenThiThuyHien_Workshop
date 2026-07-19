@@ -184,28 +184,28 @@ Besides that, the sharing sessions about Hackathon, confidence, and the Tử Vi 
 
 #### Some Images When Participating in the Event
 
-{{< figure src="/images/events/event-1/01-khong-khi-su-kien.png" alt="The atmosphere of the sharing session with many students participating" width="300px" >}}
+{{< figure src="/NguyenThiThuyHien_Workshop/images/events/event-1/01-khong-khi-su-kien.png" alt="The atmosphere of the sharing session with many students participating" width="300px" >}}
 *Figure 4.2.1. The atmosphere of the sharing session with the participation of many students.*
 
-{{< figure src="/images/events/event-1/02-agenda-cloud-quest.png" alt="Program content of AWS Cloud Quest and FLoCi" width="300px" >}}
+{{< figure src="/NguyenThiThuyHien_Workshop/images/events/event-1/02-agenda-cloud-quest.png" alt="Program content of AWS Cloud Quest and FLoCi" width="300px" >}}
 *Figure 4.2.2. Agenda of the sharing session about AWS Cloud Quest and FLoCi.*
 
-{{< figure src="/images/events/event-1/03-github-floci.png" alt="Introduction to FLoCi Open Source GitHub" width="300px" >}}
+{{< figure src="/NguyenThiThuyHien_Workshop/images/events/event-1/03-github-floci.png" alt="Introduction to FLoCi Open Source GitHub" width="300px" >}}
 *Figure 4.2.3. Introduction to FLoCi Open Source GitHub.*
 
-{{< figure src="/images/events/event-1/04-learning-roadmap.png" alt="Cloud learning and practice roadmap" width="300px" >}}
+{{< figure src="/NguyenThiThuyHien_Workshop/images/events/event-1/04-learning-roadmap.png" alt="Cloud learning and practice roadmap" width="300px" >}}
 *Figure 4.2.4. Learning roadmap from architecture, testing, to real deployment.*
 
-{{< figure src="/images/events/event-1/05-confidence.png" alt="Content of the sharing session on confidence" width="300px" >}}
+{{< figure src="/NguyenThiThuyHien_Workshop/images/events/event-1/05-confidence.png" alt="Content of the sharing session on confidence" width="300px" >}}
 *Figure 4.2.5. Sharing session on confidence in learning and student life.*
 
-{{< figure src="/images/events/event-1/06-tu-vi-dai-viet.png" alt="Introduction to the Tử Vi Đại Việt project" width="300px" >}}
+{{< figure src="/NguyenThiThuyHien_Workshop/images/events/event-1/06-tu-vi-dai-viet.png" alt="Introduction to the Tử Vi Đại Việt project" width="300px" >}}
 *Figure 4.2.6. Introduction session for the Tử Vi Đại Việt project.*
 
-{{< figure src="/images/events/event-1/07-vision-differentiation.png" alt="Vision and Differentiation of the product" width="300px" >}}
+{{< figure src="/NguyenThiThuyHien_Workshop/images/events/event-1/07-vision-differentiation.png" alt="Vision and Differentiation of the product" width="300px" >}}
 *Figure 4.2.7. Content about the vision and differentiation of the product.*
 
-{{< figure src="/images/events/event-1/08-aws-migration.png" alt="Comparison between current infrastructure and target AWS architecture" width="300px" >}}
+{{< figure src="/NguyenThiThuyHien_Workshop/images/events/event-1/08-aws-migration.png" alt="Comparison between current infrastructure and target AWS architecture" width="300px" >}}
 *Figure 4.2.8. Comparison between the current stack and the infrastructure migration orientation to AWS.*
 
 > Overall, the event not only provided technical knowledge but also helped me change my way of thinking about application design, system modernization, and more effective coordination among teams.

@@ -37,7 +37,7 @@ This means that a Session Policy can only reduce permissions, not expand them. A
 
 The following diagram illustrates the authentication and authorization flow of Amazon EKS Pod Identity.
 
-{{< figure src="/images/blog/blog1.jpg" title="Amazon EKS Pod Identity Architecture" width="650px" >}}
+{{< figure src="/NguyenThiThuyHien_Workshop/images/blog/blog1.jpg" title="Amazon EKS Pod Identity Architecture" width="650px" >}}
 
 The architecture can be divided into three main layers.
 
