@@ -1,59 +1,86 @@
 ---
 title: "Worklog Tuần 4"
-date: 2024-01-01
-weight: 1
+date: 2026-05-11
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Mục tiêu tuần 4
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Hiểu kiến trúc và các khái niệm cốt lõi của dịch vụ Amazon Simple Storage Service (Amazon S3).
+* Tìm hiểu cách tạo và quản lý Bucket cũng như Object trên Amazon S3.
+* Thực hành cấu hình quyền truy cập, Versioning và Lifecycle Management cho Bucket.
+* Nắm được các phương pháp tối ưu trong việc lưu trữ và bảo mật dữ liệu trên Amazon S3.
 
+### Các công việc thực hiện trong tuần
 
-### Kết quả đạt được tuần 4:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --------- | ------------ | --------------- | ------------------ |
+| 2   | - Tìm hiểu kiến trúc của Amazon S3.<br>- Nắm được khái niệm Object Storage.<br>- Tìm hiểu các lớp lưu trữ (Storage Classes) và các trường hợp sử dụng phổ biến của Amazon S3. | 11/05/2026 | 11/05/2026 |
+| 3   | - Tạo Amazon S3 Bucket.<br>- Thực hành tải lên, tải xuống và xóa Object.<br>- Tổ chức dữ liệu bằng Folder và Prefix. | 12/05/2026 | 12/05/2026 |
+| 4   | - Cấu hình Bucket Policy và IAM Policy.<br>- Thiết lập quyền truy cập cho Bucket.<br>- Thực hành quản lý quyền truy cập an toàn đối với tài nguyên Amazon S3. | 13/05/2026 | 13/05/2026 |
+| 5   | - Kích hoạt Bucket Versioning.<br>- Cấu hình Lifecycle Rules.<br>- Thực hành khôi phục các phiên bản Object và tự động chuyển đổi lớp lưu trữ. | 14/05/2026 | 14/05/2026 |
+| 6   | - Ôn tập các tính năng của Amazon S3 và các phương pháp triển khai tốt nhất.<br>- Ghi chép kết quả các bài thực hành.<br>- Hoàn thành và nộp báo cáo thực tập tuần. | 15/05/2026 | 15/05/2026 |
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Kết quả đạt được tuần 4
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hiểu toàn diện về dịch vụ **Amazon Simple Storage Service (Amazon S3)**.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Nắm được các khái niệm cốt lõi của Amazon S3, bao gồm:
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+  * Bucket
+  * Object
+  * Object Key
+  * Prefix
+  * Storage Class
+  * Metadata
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Tạo và quản lý thành công các **Amazon S3 Bucket**.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Thực hành các thao tác quản lý Object, bao gồm:
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+  * Tải lên (Upload)
+  * Tải xuống (Download)
+  * Sao chép (Copy)
+  * Di chuyển (Move)
+  * Xóa (Delete)
 
+* Hiểu các lớp lưu trữ (Storage Classes) của Amazon S3, bao gồm:
 
+  * S3 Standard
+  * S3 Intelligent-Tiering
+  * S3 Standard-Infrequent Access (S3 Standard-IA)
+  * S3 One Zone-Infrequent Access (S3 One Zone-IA)
+  * S3 Glacier Instant Retrieval
+  * S3 Glacier Flexible Retrieval
+  * S3 Glacier Deep Archive
+
+* Cấu hình thành công **Bucket Policy** và **IAM Policy** để bảo vệ tài nguyên trên Amazon S3.
+
+* Hiểu sự khác biệt giữa:
+
+  * Bucket Policy
+  * IAM Policy
+  * Access Control List (ACL)
+
+* Kích hoạt thành công **Bucket Versioning** và thực hành khôi phục các phiên bản trước của Object.
+
+* Cấu hình **Lifecycle Rules** để tự động chuyển đổi lớp lưu trữ và xóa dữ liệu theo vòng đời, góp phần tối ưu chi phí lưu trữ.
+
+* Nắm được các phương pháp bảo mật dữ liệu trên Amazon S3 theo khuyến nghị của AWS, bao gồm:
+
+  * Chặn truy cập công khai (Block Public Access)
+  * Áp dụng nguyên tắc **Least Privilege**
+  * Mã hóa dữ liệu khi lưu trữ (Encryption at Rest)
+  * Sử dụng Versioning để bảo vệ dữ liệu
+
+* Có kinh nghiệm thực tế trong việc quản lý hệ thống lưu trữ đám mây phục vụ cho ứng dụng web và hệ thống doanh nghiệp.
+
+* Nâng cao kỹ năng xử lý sự cố bằng cách khắc phục các lỗi phổ biến liên quan đến quyền truy cập Bucket và Object.
+
+* Hoàn thiện tài liệu hướng dẫn triển khai Amazon S3 và lưu lại kết quả các bài thực hành để phục vụ việc tham khảo sau này.
+
+* Xây dựng nền tảng vững chắc để tích hợp Amazon S3 với các dịch vụ AWS khác như **Amazon EC2, Amazon RDS, AWS Lambda và Amazon CloudFront** trong các dự án tiếp theo.

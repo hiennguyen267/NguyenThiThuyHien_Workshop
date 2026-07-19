@@ -1,57 +1,75 @@
 ---
 title: "Week 6 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-05-25
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand the architecture and networking concepts of Amazon Virtual Private Cloud (Amazon VPC).
+* Learn how to design and configure a secure virtual network on AWS.
+* Practice creating subnets, route tables, Internet Gateway, and security configurations.
+* Understand communication between AWS resources within a VPC.
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| 2   | - Learn Amazon VPC concepts.<br>- Understand CIDR blocks, VPC components, and networking fundamentals.<br>- Explore AWS networking architecture and best practices. | 25/05/2026 | 25/05/2026 |
+| 3   | - Create an Amazon VPC.<br>- Configure Public and Private Subnets.<br>- Assign appropriate CIDR ranges and Availability Zones. | 26/05/2026 | 26/05/2026 |
+| 4   | - Configure Route Tables and Internet Gateway.<br>- Associate Route Tables with subnets.<br>- Verify Internet connectivity for public resources. | 27/05/2026 | 27/05/2026 |
+| 5   | - Configure Security Groups and Network ACLs.<br>- Define inbound and outbound rules.<br>- Compare Security Groups and NACL functionalities. | 28/05/2026 | 28/05/2026 |
+| 6   | - Test VPC connectivity between resources.<br>- Verify network configuration and troubleshoot connectivity issues.<br>- Summarize weekly learning and submit the internship report. | 29/05/2026 | 29/05/2026 |
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Developed a comprehensive understanding of Amazon Virtual Private Cloud (Amazon VPC).
 
-* Successfully created and configured an AWS Free Tier account.
+* Learned the core networking components of Amazon VPC, including:
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+  * Virtual Private Cloud (VPC)
+  * CIDR Block
+  * Public Subnet
+  * Private Subnet
+  * Route Table
+  * Internet Gateway (IGW)
+  * Network Address Translation (NAT Gateway)
+  * Security Group
+  * Network Access Control List (NACL)
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Successfully created and configured an Amazon VPC with Public and Private Subnets.
 
-* Used AWS CLI to perform basic operations such as:
+* Understood IP addressing and subnet planning using CIDR notation.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Successfully configured Route Tables and associated them with the appropriate subnets.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Configured an Internet Gateway to enable Internet access for resources located in Public Subnets.
+
+* Learned the differences between Public Subnets and Private Subnets, including their common deployment scenarios.
+
+* Successfully configured Security Groups and Network ACLs to control inbound and outbound network traffic.
+
+* Understood the differences between:
+
+  * Security Groups (Stateful Firewall)
+  * Network ACLs (Stateless Firewall)
+
+* Practiced testing network connectivity using common networking tools and verified communication between AWS resources.
+
+* Learned AWS networking security best practices, including:
+
+  * Isolating workloads using Private Subnets
+  * Restricting unnecessary inbound traffic
+  * Applying the Principle of Least Privilege
+  * Using layered network security controls
+
+* Gained practical experience in designing secure and scalable cloud network architectures.
+
+* Improved troubleshooting skills by identifying and resolving routing, subnet, and connectivity issues within Amazon VPC.
+
+* Documented the complete VPC deployment process and networking configuration for future reference.
+
+* Established a strong networking foundation for deploying highly available and secure cloud applications such as PharmaCare AI in the following weeks.

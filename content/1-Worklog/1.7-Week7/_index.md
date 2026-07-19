@@ -1,57 +1,88 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-06-01
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand the concepts and architecture of Elastic Load Balancing (ELB).
+* Learn how to distribute incoming traffic across multiple Amazon EC2 instances.
+* Configure Auto Scaling to automatically adjust application capacity based on workload.
+* Monitor AWS resources using Amazon CloudWatch and configure alarms for proactive monitoring.
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Learn Elastic Load Balancer (ELB) concepts.<br>- Understand the different types of Load Balancers available in AWS.<br>- Explore common use cases and high availability architecture. | 01/06/2026 | 01/06/2026 |
+| 3   |  - Configure an Application Load Balancer (ALB).<br>- Create Target Groups.<br>- Register EC2 instances and verify traffic distribution. | 02/06/2026 | 02/06/2026 |
+| 4   |- Create an Auto Scaling Group.<br>- Configure Launch Template.<br>- Define scaling policies based on CPU utilization. | 03/06/2026 | 03/06/2026 |
+| 5   | - Learn Amazon CloudWatch monitoring.<br>- Monitor EC2 performance metrics.<br>- Explore dashboards, logs, and monitoring features. | 04/06/2026 | 04/06/2026 |
+| 6   | - Configure CloudWatch Alarm.<br>- Create CPU utilization alarms.<br>- Review Elastic Load Balancer, Auto Scaling, and CloudWatch implementation.<br>- Complete the weekly internship report. | 05/06/2026 | 05/06/2026 |
 
 
 ### Week 7 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Developed a comprehensive understanding of Elastic Load Balancing (ELB) and its role in building highly available AWS architectures.
 
-* Successfully created and configured an AWS Free Tier account.
+* Learned the different types of AWS Load Balancers, including:
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+  * Application Load Balancer (ALB)
+  * Network Load Balancer (NLB)
+  * Gateway Load Balancer (GWLB)
+  * Classic Load Balancer (Overview)
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Successfully configured an Application Load Balancer to distribute traffic across multiple EC2 instances.
 
-* Used AWS CLI to perform basic operations such as:
+* Learned how Target Groups work and how they are associated with EC2 instances.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Understood the concepts of:
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+  * Listener
+  * Listener Rules
+  * Target Groups
+  * Health Checks
+  * Routing Policies
+
+* Successfully created and configured an Auto Scaling Group.
+
+* Learned how Auto Scaling automatically increases or decreases the number of EC2 instances based on application demand.
+
+* Configured Launch Templates and scaling policies to improve application availability and performance.
+
+* Developed a comprehensive understanding of Amazon CloudWatch, including:
+
+  * Metrics
+  * Dashboards
+  * Logs
+  * Events
+  * Alarms
+
+* Successfully monitored EC2 instance performance using CloudWatch metrics such as:
+
+  * CPU Utilization
+  * Network In
+  * Network Out
+  * Disk Read/Write Operations
+  * Status Check Metrics
+
+* Configured CloudWatch Alarms to automatically notify administrators when resource utilization exceeded predefined thresholds.
+
+* Understood the integration between:
+
+  * Elastic Load Balancer
+  * Auto Scaling
+  * CloudWatch
+  * Amazon EC2
+
+* Learned AWS best practices for building scalable, highly available, and fault-tolerant cloud applications.
+
+* Improved troubleshooting skills by testing load balancing behavior, monitoring system health, and validating automatic scaling operations.
+
+* Documented all laboratory exercises, architecture diagrams, and monitoring configurations for future reference.
+
+* Established a solid foundation for deploying production-ready cloud applications and preparing for serverless and automation services in the following weeks.

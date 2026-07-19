@@ -1,59 +1,136 @@
 ---
 title: "Worklog Tuần 11"
-date: 2024-01-01
-weight: 2
+date: 2026-06-29
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Mục tiêu tuần 11
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Rà soát yêu cầu kỹ thuật và kiến trúc của dự án **PharmaCare AI**.
+* Đánh giá phương án triển khai ứng dụng bằng Amazon EC2 và so sánh với kiến trúc serverless sử dụng AWS Lambda.
+* Điều chỉnh backend từ mô hình máy chủ truyền thống sang kiến trúc serverless.
+* Xây dựng hạ tầng mạng và cơ sở dữ liệu cho hệ thống.
+* Xây dựng backend API và cơ chế xác thực người dùng.
+* Kiểm thử khả năng kết nối giữa frontend và các dịch vụ AWS.
 
+### Các công việc thực hiện trong tuần
 
-### Kết quả đạt được tuần 11:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --------- | ------------ | --------------- | ------------------ |
+| 2   | - Rà soát yêu cầu và kiến trúc dự án **PharmaCare AI**.<br>- Phân tích phương án triển khai ứng dụng bằng Amazon EC2.<br>- Xác định các yêu cầu về mạng, bảo mật và vận hành hệ thống. | 29/06/2026 | 29/06/2026 |
+| 3   | - So sánh phương án EC2 với AWS Lambda.<br>- Điều chỉnh backend sang mô hình serverless.<br>- Tạo VPC, Public Subnet, Private App Subnet, Private DB Subnet, Route Table và Security Group. | 30/06/2026 | 30/06/2026 |
+| 4   | - Triển khai Amazon RDS for PostgreSQL trong Private DB Subnet.<br>- Lưu thông tin xác thực bằng AWS Secrets Manager.<br>- Tạo Lambda pharmacare-db-migration để khởi tạo cấu trúc dữ liệu. | 01/07/2026 | 01/07/2026 |
+| 5   | - Tạo Amazon Cognito User Pool, App Client và hai nhóm Admin, Customer.<br>- Xây dựng Lambda pharmacare-backend-api để xử lý sản phẩm, hồ sơ, giỏ hàng và đơn hàng.| 02/07/2026 | 02/07/2026 |
+| 6   | - Tạo API Gateway HTTP API, cấu hình CORS và Cognito JWT Authorizer.<br>- Tạo React frontend bằng Vite để kiểm thử đăng nhập, public API và protected API.<br>- Tổng hợp kết quả tuần.| 03/07/2026 | 03/07/2026 |
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Kết quả đạt được tuần 11
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Rà soát và điều chỉnh kiến trúc tổng thể của dự án **PharmaCare AI**.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Phân tích phương án sử dụng Amazon EC2 và đánh giá các yêu cầu vận hành của mô hình máy chủ, bao gồm:
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+  * Cấu hình hệ điều hành.
+  * Cài đặt môi trường thực thi.
+  * Quản lý bản vá và thư viện phụ thuộc.
+  * Theo dõi trạng thái máy chủ.
+  * Duy trì tài nguyên hoạt động liên tục.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* So sánh phương án Amazon EC2 với AWS Lambda dựa trên các tiêu chí:
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+  * Khả năng mở rộng.
+  * Công việc quản trị hạ tầng.
+  * Chi phí vận hành.
+  * Thời gian triển khai.
+  * Mức độ phù hợp với phạm vi dự án.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Lựa chọn kiến trúc serverless cho phần backend của hệ thống nhằm giảm công việc quản trị máy chủ và hỗ trợ mở rộng theo số lượng yêu cầu.
 
+* Xây dựng hạ tầng mạng cho PharmaCare AI, bao gồm:
 
+  * Amazon VPC.
+  * Public Subnet.
+  * Private App Subnet.
+  * Private DB Subnet.
+  * Route Table.
+  * Internet Gateway.
+  * Security Group.
+
+* Phân tách tầng ứng dụng và tầng cơ sở dữ liệu vào các private subnet nhằm hạn chế khả năng truy cập trực tiếp từ Internet.
+
+* Triển khai thành công Amazon RDS for PostgreSQL trong Private DB Subnet.
+
+* Thiết lập Security Group để chỉ cho phép các tài nguyên backend được cấp quyền kết nối đến Amazon RDS qua cổng PostgreSQL `5432`.
+
+* Sử dụng AWS Secrets Manager để mã hóa và lưu trữ thông tin đăng nhập cơ sở dữ liệu, tránh ghi trực tiếp tài khoản hoặc mật khẩu trong mã nguồn.
+
+* Tạo và cấu hình Lambda `pharmacare-db-migration` để:
+
+  * Đọc thông tin kết nối từ AWS Secrets Manager.
+  * Kết nối đến Amazon RDS PostgreSQL.
+  * Thực thi các câu lệnh migration.
+  * Khởi tạo cấu trúc bảng dữ liệu cho hệ thống.
+
+* Tạo Amazon Cognito User Pool và App Client để quản lý quá trình đăng ký, đăng nhập và xác thực người dùng.
+
+* Tạo hai nhóm người dùng:
+
+  * Admin.
+  * Customer.
+
+* Xây dựng Lambda `pharmacare-backend-api` bằng Node.js để xử lý các nhóm chức năng:
+
+  * Sản phẩm.
+  * Danh mục.
+  * Cửa hàng.
+  * Hồ sơ người dùng.
+  * Giỏ hàng.
+  * Đơn hàng.
+
+* Tạo Amazon API Gateway HTTP API và tích hợp với Lambda backend.
+
+* Khai báo các public API cho phép người dùng truy cập mà không cần đăng nhập, bao gồm:
+
+  * Kiểm tra trạng thái backend.
+  * Xem danh sách sản phẩm.
+  * Xem chi tiết sản phẩm.
+  * Xem danh mục.
+  * Xem danh sách cửa hàng.
+
+* Khai báo các protected API yêu cầu người dùng đăng nhập, bao gồm:
+
+  * Xem hồ sơ cá nhân.
+  * Quản lý giỏ hàng.
+  * Tạo đơn hàng.
+  * Xem lịch sử đơn hàng.
+
+* Cấu hình Cognito JWT Authorizer để API Gateway kiểm tra token trước khi chuyển yêu cầu đến Lambda.
+
+* Cấu hình CORS để React frontend có thể gửi yêu cầu đến API Gateway.
+
+* Tạo ứng dụng ReactJS bằng Vite để kiểm thử luồng hoạt động:
+
+  * Người dùng đăng nhập bằng Amazon Cognito.
+  * Cognito cấp JWT cho frontend.
+  * Frontend gửi JWT đến API Gateway.
+  * API Gateway xác thực JWT.
+  * Lambda xử lý nghiệp vụ.
+  * Amazon RDS lưu trữ và trả dữ liệu.
+
+* Kiểm thử thành công các public API và protected API cơ bản.
+
+* Phát hiện và xử lý một số vấn đề trong quá trình triển khai, bao gồm:
+
+  * Lỗi kết nối Lambda với Amazon RDS.
+  * Lỗi Security Group.
+  * Lỗi quyền truy cập AWS Secrets Manager.
+  * Lỗi cấu hình biến môi trường.
+  * Lỗi CORS.
+  * Lỗi cấu hình Cognito JWT Authorizer.
+
+* Hoàn thành phần hạ tầng mạng, cơ sở dữ liệu, xác thực và backend API cơ bản của dự án **PharmaCare AI**.
+
+* Chuẩn bị môi trường để tiếp tục triển khai kho hình ảnh sản phẩm, chatbot AI RAG, frontend production, giám sát, sao lưu và bảo mật trong tuần tiếp theo.

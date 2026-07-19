@@ -1,57 +1,89 @@
 ---
 title: "Week 5 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-05-18
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand the architecture and core components of Amazon Relational Database Service (Amazon RDS).
+* Learn how to deploy and manage a MySQL database on Amazon RDS.
+* Practice connecting to RDS using database management tools.
+* Understand database backup, recovery, and security best practices on AWS.
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Learn Amazon RDS architecture.<br>- Understand managed database services and supported database engines.<br>- Explore RDS deployment models and pricing options. | 18/05/2026 | 18/05/2026 |
+| 3   | - Deploy a MySQL Database on Amazon RDS.<br>- Configure DB Instance settings, storage, and security options.<br>- Review parameter groups and option groups. | 19/05/2026 | 19/05/2026 |
+| 4   | - Connect to Amazon RDS using MySQL Workbench.<br>- Create sample databases and tables.<br>- Execute SQL queries to verify database connectivity. | 20/05/2026 | 20/05/2026 |
+| 5   |  - Perform database backup and restore operations.<br>- Explore automated backups and manual snapshots.<br>- Practice restoring an RDS instance from a snapshot. | 21/05/2026 | 21/05/2026 |
+| 6   | - Review Amazon RDS implementation.<br>- Document laboratory exercises.<br>- Complete and submit the weekly internship report. | 22/05/2026 | 22/05/2026 |
 
 
 ### Week 5 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Developed a comprehensive understanding of Amazon Relational Database Service (Amazon RDS).
 
-* Successfully created and configured an AWS Free Tier account.
+* Learned the core components of Amazon RDS, including:
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+  * DB Instance
+  * Database Engine
+  * Storage Types
+  * Parameter Groups
+  * Option Groups
+  * Snapshots
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Understood the advantages of using a managed database service compared to self-managed database servers.
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully deployed a MySQL database on Amazon RDS.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Configured database settings, including:
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+  * Instance Class
+  * Storage Allocation
+  * Multi-AZ Option (Overview)
+  * Security Groups
+  * Database Credentials
+
+* Successfully connected to Amazon RDS using MySQL Workbench.
+
+* Practiced common database operations, including:
+
+  * Creating databases
+  * Creating tables
+  * Inserting records
+  * Updating data
+  * Executing SQL queries
+
+* Understood Amazon RDS networking concepts, including:
+
+  * DB Subnet Groups
+  * VPC Connectivity
+  * Security Groups
+  * Public and Private Access
+
+* Learned backup and recovery strategies in Amazon RDS, including:
+
+  * Automated Backups
+  * Manual Snapshots
+  * Point-in-Time Recovery (PITR)
+
+* Understood AWS security best practices for relational databases, including:
+
+  * Restricting database access using Security Groups
+  * Encrypting data at rest
+  * Encrypting data in transit using SSL/TLS
+  * Applying the Principle of Least Privilege
+
+* Gained practical experience in deploying, managing, and maintaining cloud-based relational databases.
+
+* Improved troubleshooting skills by resolving database connection, authentication, and network configuration issues.
+
+* Documented all deployment procedures, SQL exercises, and laboratory results for future reference.
+
+* Established a strong foundation for integrating Amazon RDS with EC2-based applications and future cloud projects such as PharmaCare AI.

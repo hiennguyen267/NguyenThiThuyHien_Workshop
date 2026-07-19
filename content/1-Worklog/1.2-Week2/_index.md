@@ -1,57 +1,71 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-04-27
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand AWS Identity and Access Management (IAM) concepts.
+* Learn how to securely manage users, groups, roles, and permissions.
+* Apply AWS security best practices using IAM policies and Multi-Factor Authentication (MFA).
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Learn AWS IAM concepts.<br>- Understand the differences between Root User and IAM User.<br>- Explore IAM best practices and security recommendations. | 27/04/2026 | 27/04/2026 |
+| 3   | - Create IAM Users and IAM Groups.<br>- Configure AWS Managed Policies.<br>- Assign permissions to different users based on responsibilities. | 28/04/2026 | 28/04/2026 |
+| 4   | - Practice the Principle of Least Privilege.<br>- Create and attach Custom IAM Policies.<br>- Verify user permissions using IAM Policy Simulator. | 29/04/2026 | 29/04/2026 |
+| 5   | - Enable Multi-Factor Authentication (MFA).<br>- Test IAM User login with MFA enabled.<br>- Review AWS security recommendations for account protection. | 30/04/2026 | 30/04/2026 | 
+| 6   | - Review all IAM laboratory exercises.<br>- Document the learning outcomes.<br>- Submit the weekly report to the mentor. | 01/05/2026 | 01/05/2026 | 
 
 
 ### Week 2 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Developed a comprehensive understanding of AWS Identity and Access Management (IAM).
 
-* Successfully created and configured an AWS Free Tier account.
+* Learned the differences between AWS account identities, including:
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+  * Root User
+  * IAM User
+  * IAM Group
+  * IAM Role
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Successfully created and managed IAM resources, including:
 
-* Used AWS CLI to perform basic operations such as:
+  * IAM Users
+  * IAM Groups
+  * AWS Managed Policies
+  * Custom IAM Policies
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Applied the Principle of Least Privilege to grant only the minimum permissions required for each user.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Understood different IAM policy components, including:
+
+  * Effect
+  * Action
+  * Resource
+  * Condition
+
+* Practiced creating and testing custom IAM policies using the IAM Policy Simulator.
+
+* Successfully enabled Multi-Factor Authentication (MFA) to improve account security.
+
+* Learned AWS security best practices for protecting AWS accounts and resources, including:
+
+  * Avoid using the Root User for daily operations.
+  * Enable MFA for privileged accounts.
+  * Rotate Access Keys regularly.
+  * Assign permissions through IAM Groups whenever possible.
+
+* Understood the authentication and authorization process in AWS.
+
+* Improved practical skills in configuring secure access control for cloud resources.
+
+* Documented IAM configurations and laboratory results for future reference.
+
+* Built a strong security foundation for working with AWS services such as EC2, S3, RDS, and VPC in the following weeks.

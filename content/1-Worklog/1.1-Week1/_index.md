@@ -1,57 +1,80 @@
 ---
 title: "Week 1 Worklog"
-date: 2024-01-01
+date: 2026-04-20
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Complete the internship onboarding process and become familiar with the working environment. 
+* Gain a fundamental understanding of Cloud Computing concepts and the AWS ecosystem. 
+* Create an AWS Free Tier account and explore the AWS Management Console.
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Attend internship orientation.<br>- Get acquainted with mentor and team members.<br>- Learn internship regulations and working process. | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3   | - Learn Cloud Computing concepts.<br>- Study IaaS, PaaS and SaaS models.<br>- Understand the benefits of Cloud Computing. | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4   | - Create an AWS Free Tier account.<br>- Explore AWS Management Console.<br>- Learn AWS Global Infrastructure (Regions & Availability Zones). | 22/04/2026 | 22/04/2026 | https://000001.awsstudygroup.com/ |
+| 5   | - Learn AWS Regions and Availability Zones.<br>- Explore AWS core service categories (Compute, Storage, Networking, Database). | 23/04/2026 | 23/04/2026 | https://docs.aws.amazon.com/ |
+| 6   | - Review all knowledge learned during the week.<br>- Complete personal notes and submit weekly report to mentor. | 24/04/2026 | 24/04/2026 |
 
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
+* Successfully completed the internship orientation and became familiar with the internship roadmap, working environment, and collaboration process.
+
+* Gained a solid understanding of Cloud Computing concepts, including:
+
+  * Infrastructure as a Service (IaaS)
+  * Platform as a Service (PaaS)
+  * Software as a Service (SaaS)
+  * Public Cloud
+  * Private Cloud
+  * Hybrid Cloud
+
+* Understood the AWS Global Infrastructure, including:
+
+  * AWS Regions
+  * Availability Zones
+  * Edge Locations
+  * Global Network Infrastructure
+
+* Successfully created and activated an AWS Free Tier account.
+
+* Became familiar with the AWS Management Console and learned how to:
+
+  * Navigate AWS services
+  * Search and access AWS resources
+  * Customize the AWS Console dashboard
+  * Explore service documentation
+
+* Learned the core AWS service categories, including:
+
   * Compute
   * Storage
-  * Networking 
+  * Networking
   * Database
-  * ...
+  * Security, Identity & Compliance
+  * Management & Governance
+  * Analytics
+  * Machine Learning
 
-* Successfully created and configured an AWS Free Tier account.
+* Understood the AWS Shared Responsibility Model and the responsibilities of AWS and customers in securing cloud resources.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Explored the AWS Pricing Model, including:
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+  * AWS Free Tier
+  * On-Demand Pricing
+  * Reserved Instances (Overview)
+  * Pay-as-you-go model
 
-* Used AWS CLI to perform basic operations such as:
+* Developed the ability to identify the appropriate AWS services for different business scenarios and cloud architectures.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Improved technical documentation skills by summarizing key concepts and maintaining weekly internship notes.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Established a solid foundation for hands-on practice with AWS IAM, EC2, S3, and other cloud services in the following weeks.

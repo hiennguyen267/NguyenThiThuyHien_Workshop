@@ -1,126 +1,211 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-05-30
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Reflection Paper on “AWS Cloud Quest, FLoCi, and Sharing Sessions on Project Development – Personal Skills”
 
-### Event Objectives
+### Purpose of the Event
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+The event was organized to create opportunities for students and beginners in technology to approach diverse topics, ranging from hands-on AWS learning, open-source tools for system development, the spirit of participating in Hackathons, personal confidence skills, to the process of building and developing technology products.
 
-### Speakers
+The main objectives of the program included:
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- Introducing an effective method for learning and practicing AWS through AWS Cloud Quest.
+- Becoming familiar with FLoCi and an approach to practicing cloud environments in a cost-optimized manner.
+- Sharing the value of Hackathons for technology students.
+- Raising awareness of confidence, growth mindset, and soft skills.
+- Learning about real-world product development stories, system architecture, and the roadmap for migrating infrastructure to AWS.
+- Creating opportunities for students from different universities to interact and exchange experiences.
 
-### Key Highlights
+### List of Speakers
 
-#### Identifying the drawbacks of legacy application architecture
+- **Huỳnh Thái Linh**  
+  Topic: AWS Cloud Quest, FLoCi, and effective hands-on AWS learning.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- **The Baller – FPT**  
+  Topic: Hackathon and why students should participate in technology competitions.
 
-#### Transitioning to modern application architecture – Microservices
+- **Nguyễn Thị Huỳnh Như – HUTECH**  
+  Topic: *Why We Always Need Confidence?*
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- **Anh Nghĩa – Swinburne**  
+  Topic: The **Tử Vi Đại Việt** project, product development mindset, and AWS infrastructure migration orientation.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+- **Khắc Uy – Việt Đức**  
+  Topic: Iceberg.
 
-#### Domain-Driven Design (DDD)
+### Main Highlights
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### AWS Cloud Quest and Challenges When Learning AWS Hands-on
 
-#### Event-Driven Architecture
+At the beginning of the program, **Huỳnh Thái Linh** shared the common difficulties students often encounter when they start learning AWS. One of the major issues is that learners often approach cloud knowledge theoretically, but do not have many opportunities to directly deploy, configure, and handle real-world situations.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+AWS Cloud Quest was introduced as a form of learning that combines games and practice. Instead of only reading documentation, learners can complete tasks based on specific scenarios, thereby understanding more clearly how AWS services are used in real systems.
 
-#### Compute Evolution
+The highlights of AWS Cloud Quest include:
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+- Learning cloud knowledge through practical tasks.
+- Creating learning motivation through a gamification mechanism.
+- Helping beginners gradually become familiar with AWS services.
+- Supporting the development of problem-solving skills.
+- Reducing cost pressure when learning and experimenting with basic content.
 
-#### Amazon Q Developer
+Through this sharing session, I realized that effective AWS learning should not stop at memorizing concepts. Learners need to actively practice, independently deploy small labs, and record the errors they encounter in order to gain a deeper understanding of cloud services.
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+#### Introduction to FLoCi and Comparison with LocalStack
 
-### Key Takeaways
+The speaker also introduced **FLoCi**, a tool that supports practicing cloud environments locally. The content focused on comparing FLoCi with LocalStack and the ability to use these tools in the process of learning, testing, or building applications.
 
-#### Design Mindset
+A notable point of this session was the mindset of optimizing the practice process. When students first learn AWS, they may face difficulties if they use real resources directly without properly controlling configurations and costs. Therefore, combining simulation environments, local tools, and real AWS accounts will make the learning process safer and more effective.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+The practice roadmap was presented in three stages:
 
-#### Technical Architecture
+- **Stage 1 – Mind & Architecture:** Becoming familiar with cloud thinking, system architecture, and AWS Cloud Quest.
+- **Stage 2 – Code & Fast Testing:** Writing source code and quickly testing with FLoCi or a local environment.
+- **Stage 3 – Real Deployment & Production:** Deploying applications on real AWS and becoming familiar with the production environment.
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+From that, I understood that it is necessary to clearly distinguish between the learning environment, the testing environment, and the real deployment environment. Each environment has a different role, but all are necessary in the software development process.
 
-#### Modernization Strategy
+#### Hackathon and Its Value for Technology Students
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+In the sharing session by **The Baller – FPT**, Hackathon was introduced as an activity that helps students develop professional skills and teamwork skills.
 
-### Applying to Work
+A Hackathon is not only a programming competition within a short period of time but also an environment for participants to:
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- Work in teams with members who have different skills.
+- Receive real-world problems and find solutions together.
+- Practice product thinking, critical thinking, and the ability to present ideas.
+- Learn how to divide tasks, manage time, and handle pressure.
+- Expand relationships with friends, mentors, and the technology community.
 
-### Event Experience
+This sharing session helped me understand that participating in a Hackathon does not necessarily mean aiming to win a prize. The more important value is the opportunity to practice, experience real problems, and recognize my strengths as well as areas that need improvement.
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+#### Confidence in Learning and Personal Development
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+**Nguyễn Thị Huỳnh Như** from HUTECH presented the topic *“Why We Always Need Confidence?”*. The content focused on students’ confidence in learning, communication, and career development.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+One common problem among students is self-doubt when comparing themselves with others, feeling anxious when expressing opinions, or being afraid of making mistakes during learning and working. The speaker emphasized that confidence does not mean thinking that one is always good, but believing that one has the ability to learn, improve, and overcome difficulties.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+Some skills that help overcome self-doubt include:
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+- Actively participating in discussions and presenting opinions.
+- Preparing knowledge carefully before speaking.
+- Breaking goals into smaller parts to track progress more easily.
+- Receiving feedback as an opportunity for improvement.
+- Not being afraid to try new activities.
+- Recognizing small achievements to create long-term motivation.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+This sharing session helped me realize that professional skills are very important, but confidence is also a necessary factor in order to demonstrate ability, communicate effectively, and seize opportunities in the technology environment.
 
-#### Some event photos
-*Add your event photos here*  
+#### The Tử Vi Đại Việt Project and the Product Development Story
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+**Nghĩa** from Swinburne introduced the **Tử Vi Đại Việt** project. This was a sharing session that left a strong impression on me because it did not only talk about the product idea but also mentioned the mindset of building a system that can develop in the long term.
+
+The project was presented with contents such as:
+
+- Building user experience through UI/UX.
+- Developing a system with data, logic, and scalability.
+- Supporting users in tracking information, asking questions, and returning to use the product frequently.
+- Creating differentiation through the combination of data and product-specific elements.
+- Considering the possibility of migrating infrastructure from the current environment to AWS.
+
+One notable content was the comparison between the current system and the target AWS architecture. Through that, I could visualize how a product can migrate from traditional infrastructure to a cloud environment.
+
+Some mentioned orientations included:
+
+- Frontend/backend applications can be deployed on ECS.
+- The database can be migrated to Amazon RDS.
+- Data and file storage can use Amazon S3.
+- Some background tasks can be processed by Lambda or suitable AWS services.
+- The CI/CD process can be combined with GitHub Actions.
+- AI/LLM components can be considered for integration according to the product’s needs.
+
+Through this sharing session, I understood that to build a successful product, there needs to be a combination of ideas, user understanding, experience design, system architecture, and a future scalability plan.
+
+#### Sharing Sessions on Iceberg
+
+The final sessions of the program revolved around the topic of **Iceberg**, including the presentation by **Khắc Uy** from Việt Đức. This is content that I need to continue learning more about after the event because my personal notes did not fully record the details.
+
+However, listening to the final sharing sessions helped me realize the importance of actively learning, asking questions, and taking systematic notes when participating in workshops. This helps transform the knowledge heard into knowledge that can be applied to the process of studying and working on projects.
+
+### Lessons Learned
+
+#### About AWS Learning
+
+- Effective AWS learning needs to go together with practice.
+- AWS Cloud Quest is a suitable approach for beginners.
+- It is necessary to build a roadmap from basic knowledge, local testing, to real deployment.
+- It is necessary to monitor configurations and costs when using cloud resources.
+- Learning cloud is not only about knowing the names of services but also understanding when to use those services.
+
+#### About Product Development
+
+- A good product must start from the real needs of users.
+- UI/UX, data, business logic, and infrastructure all affect product quality.
+- System architecture needs to be designed with scalability in mind.
+- Migrating to AWS needs a clear roadmap and should not be done hastily.
+- Technology products need to be continuously improved based on user feedback.
+
+#### About Personal Skills
+
+- Confidence is a skill that can be trained every day.
+- It is necessary to actively participate in academic and community activities.
+- Hackathon is a good environment for developing teamwork skills, product thinking, and problem-solving.
+- One should not be afraid of making mistakes when learning technology because errors are an important part of the practice process.
+- Sharing, connecting, and learning from others help the development process become faster.
+
+### Applicability to Work and Study
+
+After the event, I plan to apply the contents I learned to my internship and personal project development as follows:
+
+- Complete more tasks in AWS Cloud Quest to strengthen foundational knowledge.
+- Learn more deeply about FLoCi and LocalStack to support AWS practice in a local environment.
+- Build small projects using AWS such as S3, EC2, Lambda, or RDS.
+- Increase application deployment practice instead of only learning theory.
+- Actively participate in Hackathons, workshops, or technology community activities.
+- Practice presentation, communication, and idea exchange skills.
+- Apply product thinking when doing major assignments or personal projects.
+- Learn more about AWS architectures suitable for web, backend, and AI projects.
+
+### Reflection on Participating in the Event
+
+The event brought me much useful knowledge and a more practical perspective on learning technology. The program content did not only focus on AWS but also combined many topics related to the development journey of a technology student, including personal skills, Hackathon, product building, and system deployment thinking.
+
+What impressed me the most was the hands-on AWS learning roadmap from AWS Cloud Quest, local environments, to deployment on real AWS. This approach helps learners have a clearer direction, especially students who are just beginning to learn about cloud.
+
+Besides that, the sharing sessions about Hackathon, confidence, and the Tử Vi Đại Việt project also helped me understand that to develop in the technology field, technical knowledge alone is not enough. Students need to actively learn, communicate, cooperate with others, and dare to challenge themselves with new opportunities.
+
+> Overall, the event not only helped me expand my knowledge of AWS and software development but also created more motivation for me to continue practicing, improving my skills, and defining more clearly my development path in the technology field.
+
+#### Some Images When Participating in the Event
+
+{{< figure src="/images/events/event-1/01-khong-khi-su-kien.png" alt="The atmosphere of the sharing session with many students participating" width="300px" >}}
+*Figure 4.2.1. The atmosphere of the sharing session with the participation of many students.*
+
+{{< figure src="/images/events/event-1/02-agenda-cloud-quest.png" alt="Program content of AWS Cloud Quest and FLoCi" width="300px" >}}
+*Figure 4.2.2. Agenda of the sharing session about AWS Cloud Quest and FLoCi.*
+
+{{< figure src="/images/events/event-1/03-github-floci.png" alt="Introduction to FLoCi Open Source GitHub" width="300px" >}}
+*Figure 4.2.3. Introduction to FLoCi Open Source GitHub.*
+
+{{< figure src="/images/events/event-1/04-learning-roadmap.png" alt="Cloud learning and practice roadmap" width="300px" >}}
+*Figure 4.2.4. Learning roadmap from architecture, testing, to real deployment.*
+
+{{< figure src="/images/events/event-1/05-confidence.png" alt="Content of the sharing session on confidence" width="300px" >}}
+*Figure 4.2.5. Sharing session on confidence in learning and student life.*
+
+{{< figure src="/images/events/event-1/06-tu-vi-dai-viet.png" alt="Introduction to the Tử Vi Đại Việt project" width="300px" >}}
+*Figure 4.2.6. Introduction session for the Tử Vi Đại Việt project.*
+
+{{< figure src="/images/events/event-1/07-vision-differentiation.png" alt="Vision and Differentiation of the product" width="300px" >}}
+*Figure 4.2.7. Content about the vision and differentiation of the product.*
+
+{{< figure src="/images/events/event-1/08-aws-migration.png" alt="Comparison between current infrastructure and target AWS architecture" width="300px" >}}
+*Figure 4.2.8. Comparison between the current stack and the infrastructure migration orientation to AWS.*
+
+> Overall, the event not only provided technical knowledge but also helped me change my way of thinking about application design, system modernization, and more effective coordination among teams.

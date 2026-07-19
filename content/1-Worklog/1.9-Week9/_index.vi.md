@@ -1,59 +1,83 @@
 ---
 title: "Worklog Tuần 9"
-date: 2024-01-01
-weight: 1
+date: 2026-06-15
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 9:
+### Mục tiêu tuần 9
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hiểu yêu cầu nghiệp vụ và phạm vi của dự án PharmaCare AI.
+* Phân tích các yêu cầu chức năng và phi chức năng của hệ thống.
+* Thiết kế các sơ đồ UML nhằm mô tả quy trình hoạt động của hệ thống.
+* Lựa chọn các dịch vụ AWS phù hợp để triển khai ứng dụng PharmaCare AI.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc thực hiện trong tuần
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --------- | ------------ | --------------- | ------------------ |
+| 2   | - Tiếp nhận yêu cầu của dự án PharmaCare AI.<br>- Nghiên cứu tài liệu Đặc tả yêu cầu phần mềm (Software Requirement Specification - SRS).<br>- Tìm hiểu phạm vi dự án, mục tiêu và các bên liên quan. | 15/06/2026 | 15/06/2026 |
+| 3   | - Phân tích yêu cầu nghiệp vụ.<br>- Xác định các tác nhân (Actors) và vai trò người dùng trong hệ thống.<br>- Xác định các yêu cầu chức năng và phi chức năng. | 16/06/2026 | 16/06/2026 |
+| 4   | - Thiết kế sơ đồ Use Case Diagram.<br>- Xác định mối quan hệ giữa các tác nhân và các chức năng của hệ thống.<br>- Kiểm tra tính đầy đủ của các Use Case theo yêu cầu dự án. | 17/06/2026 | 17/06/2026 |
+| 5   | - Thiết kế sơ đồ Activity Diagram.<br>- Mô hình hóa quy trình xử lý của các nghiệp vụ chính.<br>- Rà soát luồng xử lý và logic của hệ thống. | 18/06/2026 | 18/06/2026 |
+| 6   | - Lựa chọn các dịch vụ AWS phù hợp để triển khai hệ thống.<br>- Đánh giá các phương án kiến trúc Cloud.<br>- Chuẩn bị kế hoạch triển khai dự án PharmaCare AI trên AWS. | 19/06/2026 | 19/06/2026 |
 
-### Kết quả đạt được tuần 9:
+### Kết quả đạt được tuần 9
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu rõ mục tiêu nghiệp vụ và phạm vi tổng thể của dự án **PharmaCare AI**.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Phân tích yêu cầu phần mềm và xác định các phân hệ chức năng chính của hệ thống, bao gồm:
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+  * Quản lý người dùng
+  * Quản lý thuốc
+  * Tư vấn sức khỏe bằng AI
+  * Giỏ hàng
+  * Quản lý đơn hàng
+  * Thanh toán trực tuyến
+  * Bảng điều khiển quản trị (Admin Dashboard)
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Xác định các tác nhân chính của hệ thống, bao gồm:
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+  * Khách hàng
+  * Dược sĩ
+  * Quản trị viên
+  * Trợ lý AI
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Hiểu đầy đủ các yêu cầu chức năng và phi chức năng của hệ thống, bao gồm:
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+  * Hiệu năng (Performance)
+  * Khả năng mở rộng (Scalability)
+  * Bảo mật (Security)
+  * Tính sẵn sàng (Availability)
+  * Khả năng bảo trì (Maintainability)
 
+* Thiết kế thành công **Use Case Diagram** nhằm mô tả mối quan hệ giữa người dùng và các chức năng của hệ thống PharmaCare AI.
 
+* Thiết kế **Activity Diagram** để mô hình hóa các quy trình nghiệp vụ chính, bao gồm:
+
+  * Đăng ký và đăng nhập
+  * Tìm kiếm thuốc
+  * Quy trình tư vấn AI
+  * Mua hàng và thanh toán
+  * Xử lý đơn hàng
+
+* Nâng cao kiến thức về phân tích yêu cầu phần mềm và kỹ thuật mô hình hóa hệ thống bằng UML.
+
+* Đánh giá và lựa chọn các dịch vụ AWS phù hợp để xây dựng kiến trúc hệ thống, bao gồm:
+
+  * Amazon EC2
+  * Amazon RDS
+  * Amazon S3
+  * Amazon VPC
+  * AWS IAM
+  * Amazon CloudWatch
+
+* Hiểu được mối quan hệ giữa kiến trúc ứng dụng và kiến trúc hạ tầng Cloud trong quá trình triển khai hệ thống.
+
+* Nâng cao kỹ năng phân tích hệ thống và thiết kế giải pháp bằng cách chuyển đổi các yêu cầu nghiệp vụ thành các đặc tả kỹ thuật.
+
+* Hoàn thiện tài liệu phân tích yêu cầu, các sơ đồ UML và lưu lại kết quả để phục vụ giai đoạn triển khai.
+
+* Xây dựng nền tảng vững chắc cho việc thiết kế kiến trúc Cloud và triển khai hệ thống **PharmaCare AI** trong các tuần tiếp theo.
