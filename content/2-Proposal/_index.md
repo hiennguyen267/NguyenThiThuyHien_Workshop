@@ -20,7 +20,7 @@ PharmaCare AI is a smart online pharmacy management system designed to combine a
 ### 3. Solution Architecture 
 The system is designed into 5 distinct layers to optimize security, performance, and maintainability.
 
-![PharmaCare AI Architecture](/NguyenThiThuyHien_Workshop/images/5-Workshop/5.1-Workshop-overview/dia01.jpg)
+![PharmaCare AI Architecture](/NguyenThiThuyHien_Workshop/images/5-Workshop/5.1-Workshop-overview/dia01.png)
 
 *AWS Services Used* - *Amazon Route 53 & CloudFront*: DNS management and global static content delivery (CDN).
 - *Amazon S3*: Hosting the static Frontend (Web UI) and raw medical knowledge documents (Knowledge Docs).

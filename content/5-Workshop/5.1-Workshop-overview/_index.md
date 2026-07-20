@@ -28,4 +28,4 @@ In this workshop, you will deploy the VPC, private subnets, security groups, and
 
 #### PharmaCare AI overall architecture
 
-![PharmaCare AI Overall Architecture](/NguyenThiThuyHien_Workshop/images/5-Workshop/5.1-Workshop-overview/dia01.jpg)
+![PharmaCare AI Overall Architecture](/NguyenThiThuyHien_Workshop/images/5-Workshop/5.1-Workshop-overview/dia01.png)
